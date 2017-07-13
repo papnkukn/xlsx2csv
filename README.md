@@ -1,12 +1,13 @@
 ## Introduction
 
-Excel XLSX to CSV file converter. Node.js library and a command line utility. Lightweight.
+Excel XLSX to CSV file converter. Node.js library and command line utility. Lightweight.
 
 ## Getting Started
 
 Install the package:
 ```bash
-git clone https://github.com/papnkukn/xlsx2csv
+mkdir xlsx2csv && cd xlsx2csv
+git clone https://github.com/papnkukn/xlsx2csv .
 npm install -g .
 ```
 
@@ -49,16 +50,16 @@ xlsx2csv('path/to/sample.xlsx', options, function(error, result) {
 });
 ```
 
-```
-var options = {
-  verbose: true|false
-  data: type of data to export: "formula" to export cell formula, "value" to prefer cell value, or "display" for formatted value
-  sheet: required, sheet name, e.g. "Sample"
-  range: optional, cell range, e.g. "A1:M30"
-  separator: CSV column separator, e.g. "," or ";" or "\t", default: ","
-  lineEnd: end of line char(s), e.g. "\r\n" or "\r" or "\n", default: "\n"
-};
-```
+### Options
+
+| Name      | Type   | Description |
+|-----------|--------|-------------|
+| verbose   | bool   | Detailed output while processing |
+| data      | string | Type of data to export: "formula" to export cell formula, "value" to prefer cell value, or "display" for formatted value |
+| sheet     | string | required, worksheet name to export, e.g. "Sample" |
+| range     | string | optional, capture cell range, e.g. "A1:M30" |
+| separator | string | CSV column separator, e.g. "," or ";" or "\t", default: "," |
+| lineEnd   | string | end of line char(s), e.g. "\r\n" or "\r" or "\n", default: "\n" |
 
 <!--
 ## Example of output
