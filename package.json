@@ -1,0 +1,24 @@
+{
+  "name": "node-xlsx2csv",
+  "description": "Excel XLSX document to CSV converter as a Node.js library and a command line utility",
+  "version": "0.9.1",
+  "author": "Papn Kukn",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "bin": {
+    "xlsx2csv": "bin/xlsx2csv.js"
+  },
+  "scripts": {
+    "test": "nodeunit test/test.js"
+  },
+  "dependencies": {
+    "node-xlsx2json": "^0.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/papnkukn/xlsx2csv"
+  },
+  "bugs": {
+    "url": "https://github.com/papnkukn/xlsx2csv/issues"
+  }
+}
