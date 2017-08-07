@@ -98,6 +98,11 @@ for (var i = 0; i < args.length; i++) {
   }
 }
 
+if (args.length == 0) {
+  help();
+  process.exit(0);
+}
+
 //Check if the source file argument is defined
 if (!config.source) {
   console.error("Source file not defined!");
@@ -112,7 +117,7 @@ if (!fs.existsSync(config.source)) {
 
 //Check if output file is ready to overwrite
 if (config.target && !config.force && fs.existsSync(config.target)) {
-  console.error("File already exists: " + config.source);
+  console.error("File already exists: " + config.target);
   process.exit(3);
 }
 

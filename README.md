@@ -6,8 +6,7 @@ Excel XLSX to CSV file converter. Node.js library and command line utility. Ligh
 
 Install the package:
 ```bash
-mkdir xlsx2csv && cd xlsx2csv
-git clone https://github.com/papnkukn/xlsx2csv .
+git clone https://github.com/papnkukn/xlsx2csv && cd xlsx2csv
 npm install -g .
 ```
 
